@@ -20,11 +20,12 @@ h5 {
 }
 .right {
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .pic {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-left: auto;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
     background-color: black;
 }
