@@ -18,6 +18,13 @@ h5 {
 .medium {
     background-color: beige;
 }
-.right{
+.right {
     background-color: white;
+}
+.pic {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-left: auto;
+    background-color: black;
 }
