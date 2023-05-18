@@ -9,7 +9,7 @@ h5 {
     height: 100vh;
     background-color: white;
     display: grid;
-    grid-template-columns: 350px 4fr 350px;
+    grid-template-columns: 350px 4fr 600px;
 }
 .left {
     background-color: white;
@@ -17,7 +17,6 @@ h5 {
 }
 .medium {
     background-color: beige;
-    background-image: url("images/대표사진.png");
 }
 .right{
     background-color: white;
