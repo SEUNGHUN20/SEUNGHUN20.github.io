@@ -4,6 +4,10 @@ body {
 h5 {
     color: black;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 .frame1 {
     width: 100vw;
     height: 100vh;
