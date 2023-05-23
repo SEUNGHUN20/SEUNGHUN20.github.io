@@ -16,8 +16,16 @@ a {
     grid-template-columns: 350px 4fr 600px;
 }
 .left {
+    color: black;
     background-color: white;
     text-align: center;
+}
+#line { 
+    width: 1px;
+    height: 140px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
 }
 .medium {
     background-color: beige;
