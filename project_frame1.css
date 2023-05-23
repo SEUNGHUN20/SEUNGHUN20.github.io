@@ -20,13 +20,6 @@ a {
     background-color: white;
     text-align: center;
 }
-#line { 
-    width: 1px;
-    height: 130px;
-    background-color: black;
-    margin-right: auto;
-    margin-left: auto;
-}
 .medium {
     background-color: beige;
 }
@@ -39,4 +32,11 @@ a {
     width: 250px;
     height: 300px;
     margin: 15px;
+}
+#line { 
+    width: 1px;
+    height: 130px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
 }
