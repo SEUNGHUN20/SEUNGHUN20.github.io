@@ -19,6 +19,9 @@ a {
     color: black;
     background-color: white;
     text-align: center;
+    position: fixed;
+    top: 0; left: 0;
+    width: 300px; height: 800px;
 }
 .medium {
     background-color: beige;
