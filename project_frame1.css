@@ -23,6 +23,14 @@ a {
 .medium {
     background-color: beige;
 }
+#mainpic {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    margin-top: 110px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .right {
     background-color: white;
     display: grid;
