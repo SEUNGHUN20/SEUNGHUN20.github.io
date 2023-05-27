@@ -13,30 +13,34 @@ a {
     height: 100vh;
     background-color: white;
     display: grid;
-    grid-template-columns: 350px 4fr 600px;
+    grid-template-columns: 300px 4fr 600px;
 }
-* {
-    margin: 10px;
-    padding: 0;
-    list-style: none; /* 리스트 줄 없애기 */
+* { /*페이지 전체에 속성 값 주기 */
+    list-style: none;
+     /* 리스트 줄 없애기 */
 }
-nav {
-    margin: 20px;
+nav { 
+    margin: 30px;
+    /* 목차에 마진 주기 */
 }
-nav > ul {
+nav > ul { /* nav의 자식 ul에 적용 하기*/
     width: 200px;
     overflow: hidden; /*요소 빠져나오지 않게 하기*/
+    margin: 0;
+    padding: 0;
 }
-nav li {
+ul li { /* 자손 셀렉터 */
     width: 200px;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 .menu:hover {
     background-color: beige;
     color: black;
 }
 .menu:hover .submenu{
-    height: 60px;
+    height: 80px;
     transition: all 1s;
     /* 메뉴에 마우스 올릴 때 서브메뉴 높이 생성*/
 }
@@ -58,7 +62,30 @@ nav li {
     height: 160px;
     background-color: black;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 130px;
+}
+#Home {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin-right: 5px;
+    padding-top: 1.5%;
+    display: inline-block;
+}
+#Home:hover {
+    background-color: beige;
+}
+#instagram {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin-right: 30px;
+    margin-left: 2.5px;
+    padding-top: 1.5%;
+    display: inline-block;
+}
+#instagram:hover {
+    background-color: beige;
 }
 .medium {
     background-color: beige;
@@ -67,7 +94,7 @@ nav li {
     width: 400px;
     height: 500px;
     background-color: white;
-    margin-top: 110px;
+    margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
 }
