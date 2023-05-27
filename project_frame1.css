@@ -19,6 +19,21 @@ a {
     list-style: none;
      /* 리스트 줄 없애기 */
 }
+.left {
+    color: black;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    top: 0; left: 0;
+    width: 300px; height: 800px;
+}
+#line { 
+    width: 1px;
+    height: 160px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: 130px;
+}
 nav { 
     margin: 30px;
     /* 목차에 마진 주기 */
@@ -48,21 +63,6 @@ ul li { /* 자손 셀렉터 */
     height: 0;
     overflow: hidden;
     /*서브메뉴 높이를 없애서 숨겨지게 보이기*/
-}
-.left {
-    color: black;
-    background-color: white;
-    text-align: center;
-    position: fixed;
-    top: 0; left: 0;
-    width: 300px; height: 800px;
-}
-#line { 
-    width: 1px;
-    height: 160px;
-    background-color: black;
-    margin-right: auto;
-    margin-left: 130px;
 }
 #Home {
     width: 30px;
