@@ -105,7 +105,7 @@ li a {
 .right{
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 오른쪽 창 열 두 개로 나누기 */
 }
 .pic {
     width: 250px;
