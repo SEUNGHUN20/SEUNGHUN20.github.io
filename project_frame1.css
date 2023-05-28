@@ -19,7 +19,7 @@ a {
 .left {
     color: black;
     background-color: white;
-    text-align: center;
+    text-align: center; /*왼쪽 창의 글자 가운데 정렬 */
     position: fixed; /* 창 고정시킨다 위 아래 움직임 영향 없음 */
     top: 0; left: 0;
     width: 300px; 
