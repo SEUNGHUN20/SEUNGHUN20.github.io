@@ -45,9 +45,34 @@
             <div></div>
             <div class="medium">
                 <div id="main">
-                    <img src="대표사진2.png" width="400px" height="500px">
+                    <img id="mainpic" src="대표사진2.png" width="400px" height="500px">
                 </div>
             </div>
+            <script>
+                var TimeOut; //일정시간 변수선언
+                
+                var ObjArray = new Array(); //Array객체로 빈배열생성
+                ObjArray[0] = "대표사진2.png";
+                ObjArray[1] = "pic.summer3.jpg";
+                ObjArray[2] = "pic.fall4.jpg";
+                ObjArray[3] = "pic.fall10.jpg";
+                                            //4자리의 배열에 각 이미지 배치
+                var nObject = 0; 
+            
+                function ShowDeafaultRotate() //스스로 자신을 호출하는 함수
+                    {
+                        nObject++; //증가연산자 사용
+                        
+                        document.getElementById("mainpic").src=ObjArray[nObject % ObjArray.length]; //이미지호출
+                        TimeOut = setTimeout("ShowDeafaultRotate()",2000); //2초후 자기자신 호출
+                    }
+                    function startAnimation()
+                {
+                    TimeOut=window.setTimeout(ShowDeafaultRotate,100); //윈도우 로드 후 0.1초 후에 반복함수 호출
+                }
+            
+                window.onload=startAnimation //웹브라우저 모든 요소 준비될 때 실행하는 함수
+                </script>
         
             <div class="right">
                 <div class="pic"><img src="pic.spring1.jpg" onmouseover="this.src='pic.spring2.jpg'" onmouseout="this.src='pic.spring1.jpg'" width="250px" height="300px"></div>
@@ -56,9 +81,7 @@
                 <div class="pic"><img src="pic.fall1.jpg" onmouseover="this.src='pic.fall2.jpg'" onmouseout="this.src='pic.fall1.jpg'" width="250px" height="300px"></div>
                 <div class="pic"><img src="pic.fall10.jpg" onmouseover="this.src='pic.fall11.jpg'" onmouseout="this.src='pic.fall10.jpg'" width="250px" height="300px"></div>
                 <div class="pic"><img src="pic.summer3.jpg" onmouseover="this.src='pic.summer1.jpg'" onmouseout="this.src='pic.summer3.jpg'" width="250px" height="300px"></div>
-            </div>
-
-        </div> 
+            </div> 
     </body>
 </html>
   
