@@ -16,7 +16,7 @@ h1:hover {
 }
 .left {
     background-color: white;
-    text-align: center; 
+    text-align: center; /* 좌측 창 텍스트 배치 중앙정렬 */
 }
 #line { 
     width: 1px;
