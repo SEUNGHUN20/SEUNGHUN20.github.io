@@ -5,19 +5,42 @@ a {
     color: black;
     text-decoration: none;
 }
+h1:hover {
+    color: rgb(239, 239, 209);
+}
 .frame2 {
-    width: 100vw; /* 너비값 꽉 차게*/
-    height: 100vh; /* 높이값 꽉 차게 */
-    display: grid; /* 두방향 레이아웃(가로-세로) 시스템인 grid 적용*/
-    grid-template-rows: 15% auto; /* 행의 배치 2개의 프레임의 크기 위 쪽은 20% 아래는 나머지 */
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 290px 2fr auto; 
 }
-.High {
+.left {
     background-color: white;
-    border-bottom: solid black;
+    text-align: center;
 }
-.LOW {
-    background-color: beige;
+#line { 
+    width: 1px;
+    height: 180px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: 140px;
 }
-#Homepage {
-    margin-bottom: 10px;
+#line2 {
+    width: 1px;
+    height: 100px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: 140px;
+}
+#instagram {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 125px;
+}
+#instagram:hover {
+    background-color: rgb(239, 239, 209);
+}
+.right {
+    background-color: black;
 }
