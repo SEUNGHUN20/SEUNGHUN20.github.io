@@ -12,11 +12,11 @@ h1:hover {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 290px 2fr auto; 
+    grid-template-columns: 290px 2fr auto; /* 두 개의 열 배치 프레임과 각각 290 나머지 꽉 채우기 */
 }
 .left {
     background-color: white;
-    text-align: center;
+    text-align: center; 
 }
 #line { 
     width: 1px;
