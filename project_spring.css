@@ -12,11 +12,11 @@ h1:hover {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 290px 2fr auto; /* 두 개의 열 배치 프레임과 각각 290 나머지 꽉 채우기 */
+    grid-template-columns: 290px 2fr auto; /* 열의 배치 2개의 프레임을 갖고 각각 290px를 갖는 창과 나머지 창을 채우는 창 생성 */
 }
 .left {
     background-color: white;
-    text-align: center; /* 좌측 창 텍스트 배치 중앙정렬 */
+    text-align: center;
 }
 #line { 
     width: 1px;
@@ -42,5 +42,14 @@ h1:hover {
     background-color: rgb(239, 239, 209);
 }
 .right {
-    background-color: black;
+    background-color: rgb(239, 239, 209);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 1:1:1의 비율인 행 만들기 */
+    grid-template-rows: 1fr;
+}
+.springpic {
+    width: 270px;
+    height: 270px;
+    margin: 40px;
+    background-color: white;
 }
