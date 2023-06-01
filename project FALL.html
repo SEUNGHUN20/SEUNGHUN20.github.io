@@ -24,20 +24,44 @@
 
                 <div id="line2"></div>
 
-                <br><br>
+                <br>
 
                 <div id="instagram">
                 <a href="https://www.instagram.com/s_hu_2/"><img src="instagram.png" width="30px" height="30px"></a>
                 </div> 
+                <br>
+                <form   name="검색엔진"
+                    action="https://search.naver.com/search.naver"
+                    method="get">
+                    <input id="search1" type="search" name="query" placeholder="옷 검색"> 
+                </form>
             </div>
             <div class="right">
-                <div class="fallpic"></div>
-                <div class="fallpic"></div>
+                <div class="fallpic">
+                    <img src="pic.fall4.JPG" 
+                                    width="270px" height="300px"
+                                    onclick="click2(this)"
+                                    >
+                </div>
+                <div class="fallpic">
+                    <img src="pic.fall1.jpg" 
+                                    width="270px" height="300px"
+                                    onclick="click3(this)"
+                                    >
+                </div>
                 <div class="fallpic"></div>
                 <div class="fallpic"></div>
                 <div class="fallpic"></div>
                 <div class="fallpic"></div>
             </div>
         </div>
+            <script>
+                function click2(obj) {
+                    alert("상의 : 파르티멘토 피시테일 코트 패딩 카키\n하의: 미니멀프로젝트 위시드 퍼티그 벌룬 코튼 팬츠")
+                }
+                function click3(obj) {
+                    alert("상의 : 인템포무드 블루종 재킷_캐러멜\n하의: 제로 원 턱 데님 팬츠_Brown")
+                }
+            </script>
     </body>
 </html>
