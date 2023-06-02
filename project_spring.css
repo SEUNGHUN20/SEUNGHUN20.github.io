@@ -51,11 +51,12 @@ h1:hover {
     width: 270px;
     height: 300px;
     margin: 30px;
-    background-color: white;
     transition:  all o.5s; /* 0.5초 동안 형태의 변화 */
 }
 .springpic:hover {
     transform: scale(1.2);
+    box-shadow: 2px 2px gray,
+                0 0 30px black;
 }
 #search1 {
     border: solid black;
