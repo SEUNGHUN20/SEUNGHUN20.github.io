@@ -50,14 +50,18 @@ h1:hover {
 .summerpic {
     width: 270px;
     height: 300px;
-    margin: 40px;
+    margin: 30px;
     background-color: white;
     transition: all 0.5s;
 }
 .summerpic:hover {
     transform: scale(1.2);
+    box-shadow: 2px 2px gray,
+                0 0 30px black;
 }
 #search1 {
     border: solid black;
+    border-radius: 5px; 
+}
     border-radius: 5px; 
 }
