@@ -50,8 +50,8 @@ h1:hover {
 .summerpic {
     width: 270px;
     height: 300px;
+    box-shadow: 0 0 30px gray;
     margin: 30px;
-    background-color: white;
     transition: all 0.5s;
 }
 .summerpic:hover {
@@ -61,7 +61,5 @@ h1:hover {
 }
 #search1 {
     border: solid black;
-    border-radius: 5px; 
-}
     border-radius: 5px; 
 }
