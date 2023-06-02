@@ -65,6 +65,9 @@ li a {
     overflow: hidden;
     /*서브메뉴 높이를 없애서 숨겨지게 보이기*/
 }
+.list:hover {
+    color: beige;
+}
 #Home {
     width: 30px;
     height: 30px;
@@ -100,7 +103,7 @@ li a {
     margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
-    box-shadow: 3px 3px 3px 3px gray; /* 박스에 그림자 속성 넣기 */
+    box-shadow: 0 0 40px gray /* 박스에 그림자 속성 넣기 */
 }
 .right{
     background-color: white;
@@ -111,7 +114,8 @@ li a {
     width: 250px;
     height: 300px;
     margin: 15px;
-    box-shadow: 3px 3px 3px 3px beige; /* 박스에 그림자 속성 넣기 */
+    box-shadow: 3px 3px beige, 
+                0 0 50px rgb(250, 250, 198); /* 박스에 그림자 속성 넣기 */
 }
 
 
