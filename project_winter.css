@@ -56,6 +56,8 @@ h1:hover {
 }
 .winterpic:hover {
     transform: scale(1.2);
+    box-shadow: 2px 2px gray,
+                0 0 30px black;
 }
 #search1 {
     border: solid black;
