@@ -46,10 +46,12 @@ h1:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* 1:1:1의 비율인 행 만들기 */
     grid-template-rows: 1fr;
+    border: solid black;
 }
 .springpic {
     width: 270px;
     height: 300px;
+    box-shadow: 0 0 30px gray;
     margin: 30px;
     transition:  all o.5s; /* 0.5초 동안 형태의 변화 */
 }
