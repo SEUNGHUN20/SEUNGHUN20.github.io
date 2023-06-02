@@ -50,8 +50,8 @@ h1:hover {
 .winterpic {
     width: 270px;
     height: 300px;
+    box-shadow: 0 0 30px gray;
     margin: 40px;
-    background-color: white;
     transition: all 0.5s;
 }
 .winterpic:hover {
