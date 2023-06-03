@@ -50,8 +50,9 @@ h1:hover {
 .fallpic {
     width: 270px;
     height: 300px;
-    box-shadow: 0 0 30px gray;
     margin: 30px;
+    box-shadow: 0 0 30px gray;
+    cursor: help;
     transition: all 0.5s; /* 0.5초 동안 형태의 변화 */
 }
 .fallpic:hover {
