@@ -13,7 +13,7 @@
                     </h1>
                     <br>
                     <div id="line"></div>
-                    <br>
+                    
                     <nav> 
                         <ul>
                             <li class="menu"><h4>CATEGORY</h4></li>
@@ -32,7 +32,8 @@
                                 </ul>
                             </li>
                         </ul>
-                        <br><br><br><br>
+                    </nav>
+                        <br>
                         <div style="width: 150px; height: 30px; background-color: white; margin-left: auto; margin-right: auto;">
                             <div id="Home">
                             <a href="https://github.com/SEUNGHUN20/SEUNGHUN20.github.io"><img src="Home.svg"></a>
@@ -59,19 +60,20 @@
                                             //4자리의 배열에 각 이미지 배치
                 var nObject = 0; 
             
-                function ShowDeafaultRotate() //스스로 자신을 호출하는 함수
+                function rotate() //스스로 자신을 호출하는 함수
                     {
                         nObject++; //증가연산자 사용
                         
                         document.getElementById("mainpic").src=ObjArray[nObject % ObjArray.length]; //이미지호출(반복호출)
-                        TimeOut = setTimeout("ShowDeafaultRotate()",2000); //2초후 자기자신 호출
+                        TimeOut = setTimeout("rotate()",2000); //2초후 자기자신 호출
                     }
-                    function startAnimation()
+                    
+                    function startrotaion()
                 {
-                    TimeOut = window.setTimeout(ShowDeafaultRotate,100); //윈도우 로드 후 0.1초 후에 반복함수 호출
+                    TimeOut = window.setTimeout(rotate,100); //윈도우 로드 후 0.1초 후에 반복함수 호출
                 }
             
-                window.onload=startAnimation //웹브라우저 모든 요소 준비될 때 실행하는 함수
+                window.onload=startrotaion //웹브라우저 모든 요소 준비될 때 실행하는 함수
             </script>
         
 
