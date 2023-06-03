@@ -1,6 +1,6 @@
 * { /*페이지 전체에 속성 값 주기 */
     list-style: none;
-     /* 리스트 줄 없애기 */
+     /* 리스트 기본 스타일 없애기 */
 }
 body {
     margin: 0;
@@ -8,6 +8,9 @@ body {
 a {
     color: black; /* 링크 글자색 바꾸기 */
     text-decoration: none; /* 링크 아래에 있는 줄 없애기 */
+}
+h1:hover {
+    color: rgb(234, 234, 207);
 }
 .frame1 {
     width: 100vw; /* 너비값 꽉 차게 */
@@ -36,10 +39,10 @@ nav {
     margin: 30px;
     /* 목차에 마진 주기 */
 }
-nav > ul { /* nav의 자식 ul에 적용 하기*/
+nav > ul { /* nav의 자식 ul에 속성값 적용 하기*/
     width: 200px;
-    overflow: hidden; /*요소 빠져나오지 않게 하기*/
-    margin: 0;
+    height: 150px;
+    margin-top: 80px;
     padding: 0;
 }
 ul li { /* 자손 셀렉터 */
@@ -57,16 +60,15 @@ li a {
 }
 .menu:hover .submenu{
     height: 80px;
+    /* 높이 설정 후 마우스 올릴 때 서브메뉴창 보이게 하기 */
     transition: all 1s;
     /* 메뉴에 마우스 올릴 때 서브메뉴 높이 생성*/
 }
 .submenu {
     height: 0;
+    /* ul의 높이 0으로 설정해서 서브메뉴의 높이 없애기 */
     overflow: hidden;
-    /*서브메뉴 높이를 없애서 숨겨지게 보이기*/
-}
-.list:hover {
-    color: beige;
+    /* 넘친 내용은 보이지 않게 하기 즉 서브메뉴창 숨기기 */
 }
 #Home {
     width: 30px;
