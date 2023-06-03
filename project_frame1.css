@@ -9,6 +9,9 @@ a {
     color: black; /* 링크 글자색 바꾸기 */
     text-decoration: none; /* 링크 아래에 있는 줄 없애기 */
 }
+a:hover {
+    color: rgb(234, 234, 207);
+}
 h1:hover {
     color: rgb(234, 234, 207);
 }
@@ -119,5 +122,6 @@ li a {
     box-shadow: 3px 3px beige, 
                 0 0 50px rgb(250, 250, 198); /* 박스에 그림자 속성 넣기 */
 }
+
 
 
