@@ -35,7 +35,7 @@ h1:hover {
 #instagram {
     width: 30px;
     height: 30px;
-    position: relative;
+    position: relative; /* 요소 움직이기 자신을 기준으로 */
     left: 125px;
 }
 #instagram:hover {
