@@ -11,7 +11,7 @@ h1:hover {
 .frame2 {
     width: 100vw;
     height: 100vh;
-    display: grid;
+    display: grid; /* 두방향 레이아웃(가로-세로) 속성인 grid 적용*/
     grid-template-columns: 290px 2fr auto; /* 열의 배치 2개의 프레임을 갖고 각각 290px를 갖는 창과 나머지 창을 채우는 창 생성 */
 }
 .left {
