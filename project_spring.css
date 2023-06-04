@@ -44,7 +44,7 @@ h1:hover {
 .right {
     background-color: rgb(239, 239, 209);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 1:1:1의 비율인 행 만들기 */
+    grid-template-columns: 1fr 1fr 1fr; /* 1:1:1의 비율인 열 만들기 */
     grid-template-rows: 1fr;
     border: solid black;
 }
