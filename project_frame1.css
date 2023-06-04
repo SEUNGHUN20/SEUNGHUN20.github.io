@@ -20,7 +20,7 @@ h1:hover {
     height: 100vh; /* 높이값 꽉 차게 */
     background-color: white;
     display: grid; /* 두방향 레이아웃(가로-세로) 속성인 grid 적용*/
-    grid-template-columns: 300px 3fr 600px; /*열(가로)의 배치 3개의 프레임 300px 400px*2*/
+    grid-template-columns: 300px 3fr 600px; /*열(가로)의 배치 3개의 프레임 300px 600px*2*/
 }
 .left {
     color: black;
