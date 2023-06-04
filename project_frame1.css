@@ -121,6 +121,10 @@ li a {
     margin: 15px;
     box-shadow: 3px 3px beige, 
                 0 0 60px rgb(250, 250, 198); /* 박스에 그림자 속성 넣기 */
+                transition:  all o.5s; /* 0.5초 동안 형태의 변화 */
+}
+.pic:hover {
+    transform: scale(1.2); /*마우스를 올릴 시 크기 1.2배 증가 */
 }
 
 
