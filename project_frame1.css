@@ -38,40 +38,18 @@ h1:hover {
     margin-right: auto;
     margin-left: 130px;
 }
-nav { 
-    margin: 30px;
-    /* 목차에 마진 주기 */
+
+.menuba {
+    width: 100%;       
 }
-nav > ul { /* nav의 자식 ul에 속성값 적용 하기*/
-    width: 200px;
-    height: 150px;
-    margin-top: 80px;
-    padding: 0;
-}
-ul li { /* 자손 셀렉터 */
-    width: 200px;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-li a {
-    margin-right: 80px;
-}
-.menu:hover {
-    color: rgb(234, 234, 207);
-    font-weight: bold;
-}
-.menu:hover .submenu{
-    height: 80px;
-    /* 높이 설정 후 마우스 올릴 때 서브메뉴창 보이게 하기 */
-    transition: all 1s;
-    /* 메뉴에 마우스 올릴 때 서브메뉴 높이 생성*/
-}
-.submenu {
-    height: 0;
-    /* ul의 높이 0으로 설정해서 서브메뉴의 높이 없애기 */
-    overflow: hidden;
-    /* 넘친 내용은 보이지 않게 하기 즉 서브메뉴창 숨기기 */
+.menu { height: 40px; background-color: white; }
+.menu > li { display: block; width: 80px; float: left; text-align: center; line-height: 20px; }
+.submenu > li { display:block; line-height: 50px; background-color: #fafafa; text-align: center;}
+.submenu { height: 0; overflow: hidden; }
+.menu > li:hover { background-color: beige; transition-duration: 0.5s; }
+.menu > li:hover .submenu { height: 150px; transition-duration: 1s; }
+.list {
+    margin-right: 100px;
 }
 #Home {
     width: 30px;
@@ -126,6 +104,5 @@ li a {
 .pic:hover {
     transform: scale(1.2); /*마우스를 올릴 시 크기 1.2배 증가 */
 }
-
 
 
