@@ -38,36 +38,38 @@ h1:hover {
     margin-right: auto;
     margin-left: 130px;
 }
+nav { 
+    width: 200px;
+    position: relative;
+    margin: 30px;
+    /* 목차에 마진 주기 */
+}
+.submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: auto;
+    background-color: beige;
+    visibility: hidden;
+    opacity: 0;
+    white-space: nowrap;
+  }
+  
+  .menu > li:hover .submenu {
+    display: block;
+  }
+  
+  .submenu > li {
+    padding :0 20px 0 20px;
+    display: inline-block;
+    line-height: 50px;
+    
+  }
 
-.menuba {
-    width: 100%;       
-}
-.menu { 
-    height: 40px; 
-    background-color: white; }
-.menu > li { 
-    display: block; 
-    width: 80px; 
-    float: left; 
-    text-align: center; 
-    line-height: 20px; }
-.submenu > li { 
-    display:block; 
-    line-height: 50px; 
-    background-color: #fafafa; 
-    text-align: center;}
-.submenu { 
-    height: 0; 
-    overflow: hidden; }
-.menu > li:hover { 
-    background-color: beige; 
-    transition-duration: 0.5s; }
-.menu > li:hover .submenu { 
-    height: 150px; 
-    transition-duration: 1s; }
-.list {
-    margin-right: 100px;
-}
+  .menu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+  }
 #Home {
     width: 30px;
     height: 30px;
@@ -121,5 +123,6 @@ h1:hover {
 .pic:hover {
     transform: scale(1.2); /*마우스를 올릴 시 크기 1.2배 증가 */
 }
+
 
 
