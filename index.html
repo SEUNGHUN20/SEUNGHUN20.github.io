@@ -14,18 +14,18 @@
                     <br>
                     <div id="line"></div>
                     
-                    <nav class="menuba"> 
+                    <nav> 
                         <ul class="menu">
                             <li><h4>CATEGORY</h4></li>
                             <li>
-                            <h5>S/S</h5>
-                                <ul class="submenu" style="margin-right: 30px;">
+                            <h5 style="margin-bottom: -7px;">S/S</h5>
+                                <ul class="submenu">
                                 <li class="list"><h5><a href="project SPRING.html">SPRING</a></h5></li>
                                 <li class="list"><h5><a href="project SUMMER.html">SUMMER</a></h5></li>
                                 </ul>
                             </li> 
                             <li>
-                            <h5>F/W</h5>
+                            <h5 style="margin-bottom: -3px;">F/W</h5>
                                 <ul class="submenu">
                                 <li class="list"><h5><a href="project FALL.html">FALL</a></h5></li>
                                 <li class="list"><h5><a href="project WINTER.html">WINTER</a></h5></li>
@@ -33,7 +33,7 @@
                             </li>
                         </ul>
                     </nav>
-                        <br><br><br>
+                        <br>
                         <div style="width: 150px; height: 30px; background-color: white; margin-left: auto; margin-right: auto;">
                             <div id="Home">
                             <a href="https://github.com/SEUNGHUN20/SEUNGHUN20.github.io"><img src="Home.svg"></a>
@@ -54,7 +54,7 @@
                 
                 var ObjArray = new Array(); //Array객체로 빈배열생성
                 ObjArray[0] = "pic.fall4.JPG";
-                ObjArray[1] = "대표사진2.png";
+                ObjArray[1] = "대표사진2.jpg";
                 ObjArray[2] = "springpic2.jpg";
                 ObjArray[3] = "summerpic4.jpg";
                                             //4자리의 배열에 각 이미지 배치
@@ -67,8 +67,9 @@
                         document.getElementById("mainpic").src=ObjArray[nObject % ObjArray.length]; //이미지호출(반복호출)
                         TimeOut = setTimeout("rotate()",2000); //2초후 자기자신 호출
                     }
-
-                    function startrotaion() {
+                    
+                    function startrotaion()
+                {
                     TimeOut = window.setTimeout(rotate,100); //윈도우 로드 후 0.1초 후에 반복함수 호출
                 }
             
